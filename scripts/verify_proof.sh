@@ -17,7 +17,7 @@ VERIFICATION_KEY=$1
 PUBLIC_OUTPUT=$2
 PROOF_FILE=$3
 
-if snarkjs groth16 verify $VERIFICATION_KEY $PUBLIC_OUTPUT $PROOF_FILE; then
+if npx snarkjs groth16 verify $VERIFICATION_KEY $PUBLIC_OUTPUT $PROOF_FILE; then
     echo "Proof verified."
 else
     echo "Proof verification failed."

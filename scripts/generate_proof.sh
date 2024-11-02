@@ -20,7 +20,7 @@ echo "Generating the proof for $EXAMPLE_NAME..."
 node utils/generate_witness.js $WASM_PATH $INPUT_JSON_PATH $WITNESS_PATH
 
 # Generate the proof
-snarkjs groth16 prove $ZKEY_PATH $WITNESS_PATH $TARGET_DIR/proof.json $TARGET_DIR/public.json
+npx snarkjs groth16 prove $ZKEY_PATH $WITNESS_PATH $TARGET_DIR/proof.json $TARGET_DIR/public.json
 
 echo "Proof generated."
 echo "Proof: $TARGET_DIR/proof.json"
