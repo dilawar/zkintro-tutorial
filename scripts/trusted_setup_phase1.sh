@@ -23,7 +23,7 @@ mkdir -p "$TARGET_DIR"
 cd "$TARGET_DIR"
 
 # Initialize and contribute to the "powers of tau" ceremony
-$SNARKJS powersoftau new bn128 12 pot12_0000.ptau -v
+$SNARKJS powersoftau new bn256 12 pot12_0000.ptau -v
 $SNARKJS powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="Foo" -v
 
 # Store the artifact after Phase 1
